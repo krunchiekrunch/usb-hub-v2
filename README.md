@@ -18,4 +18,9 @@ This is a 4 port USB 2.0 hub, it has a reverse voltage diode in case the compute
 
 ![LCSC Cart](assets/BOM_lcsc.png)
 
+
+![LCSC Cart](assets/BOM_jlcpcb.png)
+
+Total: $21.62
+
 <img width="939" height="356" alt="blueprint_logo_centered" src="https://github.com/user-attachments/assets/f3029de2-d126-4f55-88a8-540c89e0984f" />
