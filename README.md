@@ -14,5 +14,8 @@ This is a 4 port USB 2.0 hub, it has a reverse voltage diode in case the compute
 | ![PCB](assets/pcb.png) | ![3D-Front](assets/3dfront.png) | ![Case1](assets/case.png)         |
 |                        | ![3D-Back](assets/3dback.png)   | ![Case2](assets/case-section.png) |
 
+# BOM
+
+![LCSC Cart](assets/BOM_lcsc.png)
 
 <img width="939" height="356" alt="blueprint_logo_centered" src="https://github.com/user-attachments/assets/f3029de2-d126-4f55-88a8-540c89e0984f" />
