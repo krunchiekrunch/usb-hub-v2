@@ -14,6 +14,10 @@ This is a 4 port USB 2.0 hub, it has a reverse voltage diode in case the compute
 | ![PCB](assets/pcb.png) | ![3D-Front](assets/3dfront.png) | ![Case1](assets/case.png)         |
 |                        | ![3D-Back](assets/3dback.png)   | ![Case2](assets/case-section.png) |
 
+# Assembly instructions
+
+Solder all the SMD components first, then the USB ports, then put some glue/tape on the circular platforms on the bottom of the case, then put the PCB on top. Then you can slide the top of the case in, the friction should be able to keep it in place (or you can put some glue around the edge).
+
 # BOM
 
 ![LCSC Cart](assets/BOM_lcsc.png)
