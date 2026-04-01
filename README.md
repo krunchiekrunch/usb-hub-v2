@@ -4,13 +4,14 @@
 
 This is a 4 port USB 2.0 hub, it has a reverse voltage protection circuit in case the devices sends too much voltage and also has decoupling capacitors to protect the host USB ports. There are both USB-A and a USB-C port (which Supports USB-C PD at 5V) that can be connected to a PC, although only one connector should be used to connect for data at a time, but the other one can be used to supply higher power to the devices.
 
-This is a version 2 of my usb hub designs, the [version 1](https://github.com/krunchiekrunch/usb-hub) of the design has many flaws such as:
+# Why I made it
+
+Previously, I made [usb-hub version 1](https://github.com/krunchiekrunch/usb-hub), but unfortunately, there were many flaws which made it so that it's incompatilable with many of my devices such as
 - poorly placed decoupling capacitors
 - a reverse voltage diode with a massive voltage drop
 - the lack of a external crystal
-which made it so that it's incompatilable with many of my devices.
 
-This version aims to solve those issues with the addition of
+ So I created version 2 which aims to solve those issues with the addition of
 - a ground plane
 - an external crystal
 - differential traces for better signal integritiy
