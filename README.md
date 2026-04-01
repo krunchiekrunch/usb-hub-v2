@@ -1,9 +1,32 @@
 # usb-hub-v2
-A 4 port USB hub that have both USB-A and USB-C connector for PC.
 
 # About
 
-This is a 4 port USB 2.0 hub, it has a reverse voltage diode in case the computer sends too much voltage and also has decoupling capacitors to protect the other USB ports. There's a USB-A and a USB-C port (Supports USB-C PD) that can be connected to a PC, although only one should be used at a time.
+This is a 4 port USB 2.0 hub, it has a reverse voltage protection circuit in case the devices sends too much voltage and also has decoupling capacitors to protect the host USB ports. There are both USB-A and a USB-C port (which Supports USB-C PD at 5V) that can be connected to a PC, although only one connector should be used to connect for data at a time, but the other one can be used to supply higher power to the devices.
+
+This is a version 2 of my usb hub designs, the [version 1](https://github.com/krunchiekrunch/usb-hub) of the design has many flaws such as:
+- poorly placed decoupling capacitors
+- a reverse voltage diode with a massive voltage drop
+- the lack of a external crystal
+which made it so that it's incompatilable with many of my devices.
+
+This version aims to solve those issues with the addition of
+- a ground plane
+- an external crystal
+- differential traces for better signal integritiy
+- P-Channel MOSFET for reverse voltage protection (Less voltage drop)
+- SMD components for easier assembly
+- a more secure case design. 
+
+[OnShape Document](https://cad.onshape.com/documents/efce2298bdb4cf98a9c696d8/w/922ae4eee0c64909c767a4ca/e/18ffe383e3b3a38790e4ceb5)
+
+As seen in the SL2.1A datasheet's reference circuit and many online designs, loading capacitors for the crystal is not required for this IC.
+
+<img width="687" height="697" alt="image" src="https://github.com/user-attachments/assets/571fdef0-a54e-4457-9fcf-ee1ccdd47a21" />
+
+# Assembly instructions
+
+Solder all the SMD components first, then the USB ports, insert and secure the heatset inserts in the 2 holes on the bottom of the case, then use 2x M3 screws (max 5.5mm) to screw in and secure the PCB, then align the friction lock poles and push the top of the case in.
 
 # Images
 
@@ -13,10 +36,6 @@ This is a 4 port USB 2.0 hub, it has a reverse voltage diode in case the compute
 |-----|------------|------|
 | ![PCB](assets/pcb.png)      | ![3D-Front](assets/3dfront.png) | ![Case1](assets/case.png)         |
 | ![PCB-2D](assets/pcb2d.png) | ![3D-Back](assets/3dback.png)   | ![Case2](assets/case-section.png) |
-
-# Assembly instructions
-
-Solder all the SMD components first, then the USB ports, insert and secure the heatset inserts in the 2 holes on the bottom of the case, then use 2x M3 screws (max 5.5mm) to screw in and secure the PCB, then align the friction lock poles and push the top of the case in.
 
 # BOM
 
