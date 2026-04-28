@@ -40,12 +40,13 @@ Solder all the SMD components first, then the USB ports, insert and secure the h
 
 # BOM
 
-![LCSC Cart](assets/BOM_lcsc.png)
+![LCSC Cart](assets/BOM/BOM_lcsc.png)
 
+![JLCPCB Cart](assets/BOM/BOM_jlcpcb_1.png)
 
-![LCSC Cart](assets/BOM_jlcpcb.png)
+![JLCPCB Cart](assets/BOM/BOM_jlcpcb_2.png)
 
-![AE Cart](assets/BOM_ae.png)
+![AE Cart](assets/BOM/BOM_ae.png)
 
 | LCSC#     | Customer #           | Quantity | Extended Price ($) | Product Link                                                                 |
 |-----------|----------------------|----------|--------------------|------------------------------------------------------------------------------|
